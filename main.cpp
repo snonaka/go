@@ -622,8 +622,8 @@ int main()
     
 	for (;;) {
         if ( fgets(str, 256, stdin)==NULL ) break;  // 標準入力から読む
-        fprintf(stderr, playstr);
-        strcpy(playstr,str);
+        //fprintf(stderr, playstr);
+        //strcpy(playstr,str);
         if      ( strstr(str,"boardsize")   ) {
             send_gtp("= \n\n");    // "boardsize 19" 19路盤
         }
